@@ -1,5 +1,5 @@
-template-repository (1.0-1) unstable; urgency=medium
+golang-github-mdlayher-netlink (1.6.0) unstable; urgency=medium
 
-  * Initial release
+  * Initial Release.
 
- -- Tsic404 <liuheng@deepin.org>  Sat, 28 Jan 2023 13:46:49 +0800
+ -- electricface <songwentai@uniontech.com>  Wed, 13 Jul 2022 18:13:21 +0800
