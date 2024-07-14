@@ -1,5 +1,65 @@
-golang-github-mdlayher-netlink (1.6.0) unstable; urgency=medium
+golang-github-mdlayher-netlink (1.7.1-1deepin1) unstable; urgency=medium
 
-  * Initial Release.
+  * Skip Test when failed to dial netlink
 
- -- electricface <songwentai@uniontech.com>  Wed, 13 Jul 2022 18:13:21 +0800
+ -- Gui-Yue <yuemeng.gui@gmail.com>  Sat, 13 Jul 2024 09:21:47 +0800
+
+golang-github-mdlayher-netlink (1.7.1-1) unstable; urgency=medium
+
+  * Team upload
+  * New upstream release (Closes: #1023166)
+  * Bump minimum required Go version to 1.18 in accordance with upstream
+    release notes
+  * Bump minimum required golang-github-mdlayher-socket-dev to 0.4.0
+  * Bump Standards-Version to 4.6.1 (no changes)
+
+ -- Daniel Swarbrick <dswarbrick@debian.org>  Tue, 13 Dec 2022 04:10:57 +0000
+
+golang-github-mdlayher-netlink (1.6.0-3) unstable; urgency=medium
+
+  [ Debian Janitor ]
+  * Apply multi-arch hints. + golang-github-mdlayher-netlink-dev: Add Multi-Arch: foreign.
+
+ -- Jelmer Vernooĳ <jelmer@debian.org>  Sun, 30 Oct 2022 01:27:45 +0000
+
+golang-github-mdlayher-netlink (1.6.0-2) unstable; urgency=medium
+
+  * Team upload
+  * Fix autopkgtest: Do not try to remove integration test twice
+
+ -- Benjamin Drung <bdrung@debian.org>  Wed, 02 Feb 2022 13:26:57 +0100
+
+golang-github-mdlayher-netlink (1.6.0-1) unstable; urgency=medium
+
+  * Team upload
+  * New upstream release
+  * Drop all patches. They are applied/addressed upstream.
+  * Specify require minimum Go version
+  * Update year in copyright
+  * Skip running integration tests (to avoid circular dependencies)
+
+ -- Benjamin Drung <bdrung@debian.org>  Mon, 31 Jan 2022 17:00:43 +0100
+
+golang-github-mdlayher-netlink (1.5.0-2) unstable; urgency=medium
+
+  * Team upload
+  * tests: Fix integer overflow on 32-bit architectures
+
+ -- Benjamin Drung <bdrung@debian.org>  Sat, 15 Jan 2022 02:05:27 +0100
+
+golang-github-mdlayher-netlink (1.5.0-1) unstable; urgency=medium
+
+  * Team upload
+  * New upstream release
+  * Refresh patches
+  * Add new dependencies golang-github-josharian-native-dev
+    and golang-github-mdlayher-socket-dev
+  * Specify build tag break_circular_dependencies
+
+ -- Benjamin Drung <bdrung@debian.org>  Fri, 14 Jan 2022 19:42:19 +0100
+
+golang-github-mdlayher-netlink (1.1.0-1) unstable; urgency=medium
+
+  * Initial release (Closes: #963592)
+
+ -- Leo Antunes <costela@debian.org>  Fri, 14 Jan 2022 16:58:10 +0100
