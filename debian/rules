@@ -1,10 +1,9 @@
 #!/usr/bin/make -f
-# See debhelper(7) (uncomment to enable)
-# output every command that modifies files on the build system.
-#export DH_VERBOSE = 1
-export DEB_BUILD_OPTIONS = nocheck
 
 %:
-	dh $@ --buildsystem=golang --with=golang
+	dh $@ --builddirectory=_build --buildsystem=golang --with=golang
 
-
+override_dh_auto_build:
+	dh_auto_build
+	# Workaround to skip integration tests. See https://bugs.debian.org/1004677
+	rm -rf _build/src/github.com/mdlayher/netlink/internal/integration
